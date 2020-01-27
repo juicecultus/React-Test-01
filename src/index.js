@@ -1,5 +1,2 @@
-import React from "react";
-import ReactDOM from "react-dom";
-
-const element = <h1>Hello World</h1>;
-ReactDOM.render(element, document.getElementById("root"));
+const colors = ['red', 'green', 'blue'];
+const items = colors.map(color => `<li>${color}</li>`);
