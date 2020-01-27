@@ -1,5 +1,9 @@
-// ES6 - Modules:
-import { Teacher } from './teacher';
+// ES6 - Named and Deafult Modules:
+// Defualt: import ... from '';
+// Named: import { ... } from '';
+
+import Teacher, { promote } from './teacher';
+import React, { Component } from 'react';
 
 const teacher = new Teacher('Justin', 'MA');
 teacher.teach();
