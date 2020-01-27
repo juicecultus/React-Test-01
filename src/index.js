@@ -1,4 +1,4 @@
-// ES6 - Classes:
+// ES6 - Inheritance:
 
 class Person {
   constructor(name) {
@@ -10,9 +10,35 @@ class Person {
   }
 }
 
-const person = new Person('Justin');
+class Teacher extends Person {
+  constructor(name, degree) {
+    super(name);
+    this.degree = degree;
+  }
+
+  teach() {
+    console.log('teach');
+  }
+}
+
+const teacher = new Teacher('Justin', 'MA');
+
+// // ES6 - Classes:
+
+// class Person {
+//   constructor(name) {
+//     this.name = name;
+//   }
+
+//   walk() {
+//     console.log('walk');
+//   }
+// }
+
+// const person = new Person('Justin');
 
 // // ES6 - Spread Operator on object:
+//
 // const first = { name: 'Justin' };
 // const second = { job: 'Front End Developer' };
 
@@ -20,18 +46,22 @@ const person = new Person('Justin');
 // const clone = { ...first };
 
 // // ES6 - Spread Operator on array:
+//
 // const first = [1, 2, 3];
 // const second = [4, 5, 6];
 
 // const combined = first.concat(second);
 
 // // with spread operator becomes:
+//
 // const combined = [...first, ...second];
 
 // // advantage being easier to add another element later on:
+//
 // const combined = [...first, 'a', ...second, 'b'];
 
 // // also easy to clone an array:
+//
 // const clone = [...first];
 
 // // ES6 - Object Destructuring:
