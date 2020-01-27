@@ -1,9 +1,23 @@
-// ES6 - Spread Operator on object:
-const first = { name: 'Justin' };
-const second = { job: 'Front End Developer' };
+// ES6 - Classes:
 
-const combined = { ...first, ...second, location: 'UK' };
-const clone = { ...first };
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  walk() {
+    console.log('walk');
+  }
+}
+
+const person = new Person('Justin');
+
+// // ES6 - Spread Operator on object:
+// const first = { name: 'Justin' };
+// const second = { job: 'Front End Developer' };
+
+// const combined = { ...first, ...second, location: 'UK' };
+// const clone = { ...first };
 
 // // ES6 - Spread Operator on array:
 // const first = [1, 2, 3];
